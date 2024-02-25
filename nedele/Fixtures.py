@@ -12,12 +12,12 @@ class Ovoce:
 
 class OvocnySalat:
     def __init__(self, *misa_ovoce):
-        self.ovoce = misa_ovoce
+        self.ovoce_tuple = misa_ovoce
         self._nakrajej_ovoce()
 
     def _nakrajej_ovoce(self):
-        for fruit in self.ovoce:
-            fruit.nakrajet()
+        for ovoce in self.ovoce_tuple:
+            ovoce.nakrajet()
 
 
 # Arrange
@@ -31,4 +31,4 @@ def test_fruit_salad(misa_ovoce):
     ovocny_salat = OvocnySalat(*misa_ovoce)
 
     # Assert
-    assert all(ovoce.nakrajene_na_kosticky for ovoce in ovocny_salat.ovoce)
+    assert all(ovoce.nakrajene_na_kosticky for ovoce in ovocny_salat.ovoce_tuple)
