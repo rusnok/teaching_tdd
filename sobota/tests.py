@@ -4,8 +4,8 @@ def test_add_numbers():
     a = 4
     b = 7
     expected = 11
-
-    assert add_numbers(a, b) == expected
+    result = add_numbers(a, b)
+    assert result == expected
 
 
 def test_add_numbers_with_negative_values():

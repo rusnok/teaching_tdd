@@ -2,7 +2,7 @@ def add_numbers(a: int, b: int):
     return a + b
 
 def test_add_numbers():
-    # Setup
+    # Arrange
     a = 4
     b = 7
     expected = 11

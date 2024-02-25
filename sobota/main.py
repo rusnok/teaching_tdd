@@ -22,3 +22,4 @@ def odd_indexes(string):
 #sum_args(5, *a)
 
 #print(odd_indexes(123))
+
