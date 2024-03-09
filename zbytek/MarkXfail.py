@@ -8,8 +8,15 @@ import pytest
 def test_eval(test_input, expected):
     assert eval(test_input) == expected
 
+@pytest.mark.skip(reason="přeskočení tohoto testu")  # tento test se přeskočí
+def test_aa(self):
+    assert True
 
-@pytest.mark.parametrize("x", [0, 1])
-@pytest.mark.parametrize("y", [2, 3])
-def test_foo(x, y):
+@pytest.mark.parametrize("x,y", [(0,2), (1,3)])
+def test_foo_zip(x, y):
+    pass
+
+@pytest.mark.parametrize("x", [0, 1, 2])
+@pytest.mark.parametrize("y", [2, 3, 6])
+def test_foo_kazdy_s_kazdym(x, y):
     pass

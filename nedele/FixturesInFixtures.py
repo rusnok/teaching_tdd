@@ -1,11 +1,9 @@
 import pytest
 
-
 # Arrange
 @pytest.fixture
 def first_entry():
     return "a"
-
 
 # Arrange
 @pytest.fixture
