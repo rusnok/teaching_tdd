@@ -55,3 +55,5 @@ def test_warehouses(capacity, result, products):
         last_result = w.add(product)
 
     assert round(last_result, 2) == result
+
+# test
